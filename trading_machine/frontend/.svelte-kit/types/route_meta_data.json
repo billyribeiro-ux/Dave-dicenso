@@ -1,0 +1,21 @@
+{
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/backtest": [
+		"src/routes/+layout.ts"
+	],
+	"/learning": [
+		"src/routes/+layout.ts"
+	],
+	"/settings": [
+		"src/routes/+layout.ts"
+	],
+	"/signals": [
+		"src/routes/+layout.ts"
+	],
+	"/trades": [
+		"src/routes/+layout.ts"
+	]
+}

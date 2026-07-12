@@ -10,7 +10,7 @@ import pandas as pd
 
 from data.storage import DataStorage
 from evolution.backtester import Backtester
-from api.models import ExportRequest
+from backend.api.models import ExportRequest
 from utils.config import get_config
 from utils.logger import get_logger
 

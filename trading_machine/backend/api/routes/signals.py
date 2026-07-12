@@ -8,7 +8,7 @@ from datetime import datetime
 from models.ticker_manager import TickerManager
 from live.screener import Screener
 from live.position_manager import PositionManager
-from api.websocket import ws_manager
+from backend.api.websocket import ws_manager
 from utils.config import get_config
 from utils.logger import get_logger
 

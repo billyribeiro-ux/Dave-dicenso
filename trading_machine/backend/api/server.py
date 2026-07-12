@@ -2,13 +2,20 @@
 backend/api/server.py — FastAPI application entry point.
 """
 
+import os
+import sys
+
+# Ensure the trading_machine root is importable
+_PKG_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, _PKG_ROOT)
+
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from datetime import datetime
 
-from api.routes import tickers, signals, backtest, learning, system
-from api.websocket import ws_manager
+from backend.api.routes import tickers, signals, backtest, learning, system
+from backend.api.websocket import ws_manager
 from utils.logger import get_logger
 
 logger = get_logger()
