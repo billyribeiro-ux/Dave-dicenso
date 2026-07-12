@@ -1,0 +1,9 @@
+{
+  "name": "trading-machine-backend",
+  "private": true,
+  "scripts": {
+    "dev": "python api/server.py",
+    "start": "uvicorn api.server:app --host 0.0.0.0 --port 8000 --reload"
+  },
+  "dependencies": {}
+}

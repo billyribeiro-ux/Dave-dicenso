@@ -1,0 +1,10 @@
+{
+  "name": "trading-machine",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter frontend dev",
+    "api": "pnpm --filter backend dev",
+    "build": "pnpm --filter frontend build",
+    "start": "pnpm --filter backend start"
+  }
+}
